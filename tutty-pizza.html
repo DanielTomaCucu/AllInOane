@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AllInOne--Tutti Pizza</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <link rel="icon" href="icon7.png">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+.p1-tutti{
+	font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+	font-size:19px;
+	font-weight:bold;
+	float:left;
+}
+.p2-tutti{
+	font-size:18px;
+	font-weight:bold;
+}
+	
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+	margin-bottom:30px;
+}
+
+.price:hover {
+    box-shadow: 0 25px 29px 0 rgba(0,0,0,0.7);
+
+}
+
+.price .header {
+    background-color: #2f2e2e;
+    color: #c4c4c4;
+   
+}
+
+.price li {
+	padding-bottom:5px;
+    text-align: center;
+}
+.h1{
+	font-size:20px;
+	color:#c00a27;
+	padding-top:5px;
+	
+}
+.p1{
+	padding-left:4px;
+	padding-right:4px;
+}
+.p2{
+	font-size:19px;
+	
+}
+.c{
+	color:#fff;
+	font-size:18px;
+	
+}
+.buton-bizza{
+    margin-bottom:10px;
+}
+	
+.h3-top{
+	text-align:center;
+	padding-top:30px;
+}
+	
+.b1{
+	border:1px solid #000;
+	width:20%;
+	margin-top:10px;
+	margin-left:40%;
+	margin-bottom:20px;
+}
+.col-md-6{
+	align:center;
+}
+.p-1-oferta{
+	color:#c00a27;
+	padding-top:10px;
+}
+.p1-header{
+	padding-top:50px;
+	font-size:20px;
+	text-align:left;
+}
+.p2-header{
+	padding-top:30px;
+	font-size:20px;
+}
+.p2-1-header{
+	font-size:20px;
+}
+.buton-header{
+	margin-top:50px;
+}
+.img-logo{
+	padding-top:15px;
+}
+.img-log-1{
+	padding-top:15px;
+	padding-left:27%;
+}
+.telefon{
+	text-align:center;
+	font-size:20px;
+	padding-top:10px;
+	font-weight:bold;
+}
+.telefon-2{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+.p1{
+	text-align:center;	
+}
+	
+	
+  </style>
+  
+  </head>
+<body>
+ <!--HEADER --> 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 d-none d-lg-block" >
+		<!--LOGO DESKTOP --> 
+				<div class="img-logo">
+				<a href="../allinone/index.html">	<img src="logo-tutti.jpg" class="img-fluid" width="150px"></a>
+				</div>
+			</div>
+			
+			<div class="col-md-3 d-lg-none" >
+		<!--LOGO TELEFOANE --> 
+				<div class="img-log-1">
+					<img src="logo-tutti.jpg" class="img-fluid" width="150px">
+				</div>
+			</div>
+ <!-- NUMERE DE TELEFON PENTRU DESKTOP --> 
+ 
+			<div class="col-md-2 d-none d-lg-block" >
+					<p class="p1-header">Telefon:</p>
+			</div>
+			
+			<div class="col-md-4 d-none d-md-block" >
+				<p class="p2-header">0741.088.815</p>
+				<p class="p2-1-header">0755.999.665</p>
+			</div>
+			
+ <!-- BUTON OFERTE --> 
+ 
+			<div class="col-md-4">
+				<div class="buton-header">
+					<button type="button" class="btn btn-danger btn-block" data-toggle="collapse" data-target="#demo"><b>Oferte >></b> </button>
+					<div id="demo" class="collapse">
+						<p class="p-1-oferta p1"><b>SPECIAL! 2 Pizza Senior 29,9 lei</b></p>
+						
+					</div>
+				</div>
+			</div>
+ <!-- BUTON NUMERE DE TELEFON PENTRU TELEFOANE--> 
+ 
+			<div class="col-md-12 d-md-none">
+				<div class="buton-header">
+					<button type="button" class="btn btn-danger btn-block" data-toggle="collapse" data-target="#demo1"><b>Telefon >> </b></button>
+						<div id="demo1" class="collapse">
+						    <p class="telefon">0741.088.815</p>
+							<p class="telefon-2">0755.999.665</p>
+						</div>
+				</div>
+			</div>
+		</div>
+  <br>
+  <!-- MENIU -->
+  
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Pizza</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Burger</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Salate si Paste</a>
+    </li>
+  </ul>
+
+  <!-- TABUL MENIULUI 1 -->
+  
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+		<h3 class="h3-top">Pizza</h3>
+			<p class="b1"></p>
+		<div class="row">
+		
+ <!-- PRIMA VARIANTA - PRIMUL RAND --> 
+ 
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="tutti.jpg" class="img-fluid" width="100%">
+							<p class="h1">Tutti - Pizza Sibiu</p>
+							<p class="p1">Contine: cascaval, sunca, bacon, salam, ciuperci, ceapa, masline,</p>
+							<a href="tutti-pizza/meniu-tutti-pizza.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+<!-- A DOUA VARIANTA - PRIMUL RAND --> 
+			
+			<div class="col-md-3">
+				<div class="columns">
+					 <ul class="price">
+						<li class="header"> </a> <img src="margherita.jpg" class="img-fluid" width="100%">
+							<p class="h1">Margherita - Pizza Sibiu</p>	
+							<p class="p1">Contine: cascaval, <br>sos rosii</p>	
+							<a href="tutti-pizza/meniu-margherita.html"><button type="button" class="btn btn-danger buton-bizza">12.9 lei >> Detalii</button></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+<!-- A TREIA VARIANTA - PRIMUL RAND --> 
+		
+			<div class="col-md-3">
+				<div class="columns">
+					 <ul class="price">
+						<li class="header"> </a> <img src="prosciutto.jpg" class="img-fluid" width="100%">
+							<p class="h1">Prosciutto Pizza Sibiu</p>	
+							<p class="p1">Contine: sunca, masline, cascaval, sos rosii</p>
+							<a href="tutti-pizza/meniu-prosciutto.html"><button type="button" class="btn btn-danger buton-bizza">16.9 lei >> Detalii</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+<!-- A PATRA VARIANTA - PRIMUL RAND --> 
+		
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="prosciutto-funghi.jpg" class="img-fluid" width="100%">
+							<p class="h1">Prosciutto Funghi Pizza </p>	
+							<p class="p1">Contine: cascaval, sunca, ciuperci, masline, sos rosii</p>
+							<a href="tutti-pizza/prosciutto-funghi .html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+	
+	
+<!--RAND  NOU--> 
+	
+	<div class="row">
+	
+<!-- PRIMA VARIANTA - AL DOILE  RAND --> 
+
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="funghi.jpg" class="img-fluid" width="100%">
+								<p class="h1">Funghi Pizza Sibiu</p>	
+								<p class="p1">Contine: ciuperci, cascaval, sos rosii  </p>	
+							<a href="tutti-pizza/funghi-pizza.html">	<button type="button" class="btn btn-danger buton-bizza">17.9 lei >> Detalii</button></a>
+							
+							</li>
+					</ul>
+				</div>
+			</div>
+			
+<!-- A DOUA VARIANTA - AL DOILE  RAND --> 		
+		
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="capriciosa.jpg" class="img-fluid" width="100%">
+								<p class="h1">Capriciosa Pizza Sibiu</p>	
+								<p class="p1">Contine: sunca, gogosar, masline, ciuperci, sos rosii, cascaval</p>	
+								<a href="tutti-pizza/capriciosa.html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+		</div>
+
+<!-- A TREIA VARIANTA - AL DOILE  RAND --> 
+		
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="tono.jpg" class="img-fluid" width="100%">
+							<p class="h1">Tono Pizza Sibiu</p>	
+							<p class="p1">Contine: cascaval, ton, ceapa, sos rosii</p>
+							<a href="tutti-pizza/meniu-tono.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+		</div>
+	
+<!-- A PATRA VARIANTA - AL DOILE  RAND --> 
+	
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="discovolante.jpg" class="img-fluid" width="100%">
+							<p class="h1">Discovolante Pizza Sibiu</p>	
+							<p class="p1">Contine: salam, sunca, ciuperci, gogosar, sos rosii, cascaval</p>
+							<a href="tutti-pizza/meniu-discovolante.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button></a>
+							
+						</li>					 
+					</ul>
+				</div>	
+		</div>
+	</div>
+	
+<!-- RAND  NOU--> 
+
+	<div class="row">
+
+<!-- PRIMA VARIANTA - AL TREILEA  RAND --> 
+
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="taraneasca.jpg" class="img-fluid" width="100%">
+								<p class="h1">Taraneasca Pizza Sibiu</p>	
+								<p class="p1">Contine: cascaval, ceapa, carnati, ciuperci, feta, usturoi, sos rosii </p>	
+								<a href="tutti-pizza/meniu-taraneasca.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button></a>
+							
+							</li>
+					</ul>
+				</div>
+			</div>
+		
+<!-- A DOUA VARIANTA - AL TREILEA  RAND --> 
+		
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="de-post.jpg" class="img-fluid" width="100%">
+								<p class="h1">Pizza de post Sibiu</p>	
+								<p class="p1">Contine: cascaval de post, ciuperci, ceapa, porumb, sos rosii, gogosar</p>	
+								<a href="tutti-pizza/meniu-de-post.html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+		</div>
+
+<!-- A TRIEA VARIANTA - AL TREILEA  RAND --> 
+		
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="hawaii.jpg" class="img-fluid" width="100%">
+							<p class="h1">Hawaii Pizza Sibiu</p>	
+							<p class="p1">Contine: ananas, cascaval, sunca, sos rosii </p>
+							<a href="tutti-pizza/meniu-hawai.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+		</div>
+		
+<!-- A PATRA VARIANTA - AL TREILEA  RAND --> 
+
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="vegetariana.jpg" class="img-fluid" width="100%">
+							<p class="h1">Vegetariana Pizza Sibiu</p>	
+							<p class="p1">Contine: masline, ceapa, usturoi, porumb, gogosar, sos rosii, porumb, cascaval</p>
+							<a href="tutti-pizza/meniu-vegetariana.html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							
+						</li>					 
+					</ul>
+				</div>	
+		</div>
+	</div>
+
+	
+	<!--  RAND NOU --> 
+	
+		<div class="row">
+		
+<!-- PRIMA VARIANTA - AL PATRULEA RAND --> 
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="transilvania.jpg" class="img-fluid" width="100%">
+								<p class="h1">Transilvania Pizza Sibiu</p>	
+								<p class="p1">Contine: bacon, usturoi, ceapa, sos rosii, cascaval</p>	
+								<a href="tutti-pizza/meniu-transilvania.html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							
+							</li>
+					</ul>
+				</div>
+			</div>
+		
+<!-- A DOUA VARIANTA - AL PATRULEA RAND --> 
+		
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="dracula.jpg" class="img-fluid" width="100%">
+								<p class="h1">Dracula Pizza Sibiu</p>	
+								<p class="p1">Contine: cascaval, salam, ceapa, ardei, usturoi  </p>	
+								<a href="tutti-pizza/meniu-dracula.html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+			</div>
+	
+<!-- A TREIA VARIANTA - AL PATRULEA RAND --> 
+	
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="quatro-formagi.jpg" class="img-fluid" width="100%">
+							<p class="h1">Quatro Formaggi </p>	
+							<p class="p1">Contine: feta, gorgonzola, sos rosii, cascaval, parmezan </p>
+							<a href="tutti-pizza/meniu-quatro-formaggi.html"><button type="button" class="btn btn-danger buton-bizza">20.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+	
+<!-- A PATRA VARIANTA - AL PATRULEA RAND --> 
+	
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="quatro-formagi-salami.jpg" class="img-fluid" width="100%">
+							<p class="h1">Quatro Formaggi & Salami </p>	
+							<p class="p1">Contine: salam, feta, parmezan, gorgonzola, cascaval, sos rosii </p>
+							<a href="tutti-pizza/meniu-quatro-formaggi-salami.html"><button type="button" class="btn btn-danger buton-bizza">21.9 lei >> Detalii</button></a>
+							
+						</li>					 
+					</ul>
+				</div>	
+			</div>
+		</div>
+		
+<!--  RAND  NOU--> 
+		
+	<div class="row">
+<!-- PRIMA VARIANTA - AL CINCILEA RAND --> 
+	
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="prosciuto-crudo-rucola.jpg" class="img-fluid" width="100%">
+								<p class="h1">Quatro Formaggi & Rucola </p>	
+								<p class="p1">Contine:  cascaval, rucola, parmezan, gorgonzola, sos rosii</p>	
+								<a href="tutti-pizza/meniu-quatro-formaggi-rucola .html"><button type="button" class="btn btn-danger buton-bizza">23.9 lei >> Detalii</button></a>
+							
+							</li>
+					</ul>
+				</div>
+			</div>
+		
+<!-- A DOUA VARIANTA - AL PATRULEA RAND --> 
+	
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="quatro-formagi-rucola.jpg" class="img-fluid" width="100%">
+								<p class="h1">Prosciutto crudo & Rucola</p>	
+								<p class="p1">Contine: prosciutto crudo, parmezan, cascaval, rucolla, sos      </p>	
+								<a href="tutti-pizza/meniu-prosciutto-crudo-rucola.html"><button type="button" class="btn btn-danger buton-bizza">21.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+		</div>
+		
+<!-- A TREIA VARIANTA - AL PATRULEA RAND --> 
+
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="milenium.jpg" class="img-fluid" width="100%">
+							<p class="h1">Millenium Pizza Sibiu </p>	
+							<p class="p1">Contine: cascaval, sunca de pui, feta,gogosar , sos de rosii </p>
+							<a href="tutti-pizza/meniu-millenium.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+		</div>
+		
+<!-- A PATRA VARIANTA - AL PATRULEA RAND --> 
+
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="salami.jpg" class="img-fluid" width="100%">
+							<p class="h1">Salami Pizza Sibiu </p>	
+							<p class="p1">Contine:  cascaval, sos rosii,</br> salam </p>
+							<a href="tutti-pizza/meniu-salami.html"><button type="button" class="btn btn-danger buton-bizza">16.9 lei >> Detalii</button></a>
+							
+						</li>					 
+					</ul>
+				</div>	
+		</div>
+	</div>
+		
+		
+<!--  RAND NOU --> 	
+		
+	<div class="row">
+<!-- PRIMA VARIANTA - AL SASELEA RAND --> 
+
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="quatro-stagioni.jpg" class="img-fluid" width="100%">
+								<p class="h1">Quatro Stagioni Pizza Sibiu </p>	
+								<p class="p1">Contine: cascaval, sunca, salam, gogosar, sos rosii, ciuperci</p>	
+								<a href="tutti-pizza/meniu-quatro-stagioni.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button></a>
+							
+							</li>
+					</ul>
+				</div>
+			</div>
+
+<!-- A DOUA VARIANTA - AL SASELEA RAND --> 			
+		
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="calzone-impaturata.jpg" class="img-fluid" width="100%">
+								<p class="h1">Calzone Impaturata Pizza </p>	
+								<p class="p1">Contine: sunca, ciuperci, sos rosii, cascaval      </p>	
+								<a href="tutti-pizza/meniu-calzone-impaturata.html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+		</div>
+
+<!-- A TREIA VARIANTA - AL SASELEA RAND --> 
+		
+		<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="siciliana.jpg" class="img-fluid" width="100%">
+							<p class="h1">Siciliana Pizza Sibiu </p>	
+							<p class="p1">Contine:  cascaval, ciuperci, feta, rosii, salam, ceapa, sos rosii  </p>
+							<a href="tutti-pizza/meniu-siciliana.html"><button type="button" class="btn btn-danger buton-bizza">19.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+		</div>
+		
+		
+
+	<!--FINALUL PRIMULUI TAB --> 	
+		
+	</div>
+	</div>
+	
+	
+<!--TAB NOU --> 
+	
+    <div id="menu1" class="container tab-pane fade"><br>
+		<h3 class="h3-top">Burger</h3>
+		<p class="b1"></p>
+			<div class="row">
+			
+<!--  RAND NOU --> 
+<!--PRIMA VARIANTA - PRIMUL RAND --> 
+				<div class="col-md-3">
+					<div class="columns">
+						<ul class="price">
+							<li class="header"> </a> <img src="burger-gorgonzola.jpg" class="img-fluid" width="100%">
+								<p class="h1">Meniu Gorgonzola burger </p>	
+								<p class="p1">Contine: (chifla, carne vita/porc, salata, gorgonzola, castravete murat, ceapa rosie) + cartofi + sos + suc 0.25</p>	
+								<a href="tutti-pizza/meniu-burger-gorgonzola.html"><button type="button" class="btn btn-danger buton-bizza">21.9 lei >> Detalii</button></a>
+							
+							</li>
+						</ul>
+					</div>
+				</div>
+		
+<!-- A DOUA VARIANTA -  PRIMUL RAND --> 
+		
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="burger-tutti.jpg" class="img-fluid" >
+								<p class="h1">Meniu Burger Tutti </p>	
+								<p class="p1">Contine: (chifla, carne vita/porc, salata, branza cheddar, castravete murat, ceapa rosie, gogosar proaspat) + cartofi + sos + suc 0.25     </p>	
+								<a href="tutti-pizza/meniu-burger-tutti.html"><button type="button" class="btn btn-danger buton-bizza">21.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+			</div>
+
+<!-- A TREIA VARIANTA - PRIMUL RAND --> 
+			
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="burger-hot.jpg" class="img-fluid" width="100%">
+							<p class="h1">Meniu Hot burger </p>	
+							<p class="p1">Contine: (chifla, carne vita/porc, salata, branza cheddar, castravete murat, ceapa rosie, chilli, ardei iute murat) + cartofi + sos + suc 0.25  </p>
+							<a href="tutti-pizza/meniu-burger-hot.html"><button type="button" class="btn btn-danger buton-bizza">21.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- FINALUL TABULUI 2 -->
+
+<!-- INCEPUTUL MENIULUI 3-->
+ 	
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3 class="h3-top">Salate/Paste</h3>
+	  <p class="b1"></p>
+<!--  RAND NOU --> 
+		<div class="row">
+		
+<!-- PRIMA VARIANTA - PRIMUL RAND --> 
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="lasagna.jpg" class="img-fluid" width="100%">
+								<p class="h1">Lasagna Sibiu </p>	
+								<p class="p1">Contine: mozzarela, ulei masline, sos rosii, parmezan, carne tocata  500 gr</p>	
+									<a href="tutti-pizza/maniu-lasagna.html"><button type="button" class="btn btn-danger buton-bizza">16.9 lei >> Detalii</button></a>
+							
+							</li>
+					</ul>
+				</div>
+			</div>
+		
+<!-- A DOUA VARIANTA - PRIMUL RAND --> 	
+
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="pene-arabiata.jpg" class="img-fluid" width="100%">
+								<p class="h1">Pene arabiata sibiu</p>	
+								<p class="p1">Contine: sos rosii, patrunjel verde, ceapa , usturoi, paste, chili  450 gr     </p>	
+								<a href="tutti-pizza/meniu-pene-arabiata.html">	<button type="button" class="btn btn-danger buton-bizza">16.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+			</div>
+
+<!-- A TREIA VARIANTA - PRIMUL RAND --> 
+			
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="pene-cu-piept.jpg" class="img-fluid" width="100%">
+							<p class="h1">	Pene cu piept de pui si ciuperci  </p>	
+							<p class="p1">Contine: piept de pui, sos alb, patrunjel verde, ciuperci, pene </p>
+								<a href="tutti-pizza/meniu-pene-piept- pui.html"><button type="button" class="btn btn-danger buton-bizza">17.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+
+<!-- A PATRA VARIANTA - PRIMUL RAND --> 
+			
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="pene-quatro.jpg" class="img-fluid" width="100%">
+							<p class="h1">Pene Quatro formaggi  </p>	
+							<p class="p1">Contine: Parmezan, gorgonzola, sos alb, cascaval, pene, feta  450 gr </p>
+							<a href="tutti-pizza/meniu-pene-quatro.html">	<button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							
+						</li>					 
+					</ul>
+				</div>	
+			</div>
+		</div>
+		
+<!--  RAND NOU --> 		
+		<div class="row">
+<!-- PRIMA VARIANTA - AL DOILEA RAND --> 
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="salata-caesar.jpg" class="img-fluid" width="100%">
+								<p class="h1">Salata Caesar cu pui </p>	
+								<p class="p1">Contine: feta, varza alba, salata iceberg, rosie, castravete, ceapa, ardei, piept pui  500 gr</p>	
+									<a href="tutti-pizza/meniu-salata-caesar.html"><button type="button" class="btn btn-danger buton-bizza">16.9 lei >> Detalii</button></a>
+							
+							</li>
+					</ul>
+				</div>
+			</div>
+
+<!-- A DOUA VARIANTA - AL DOILEA RAND --> 			
+		
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+							<li class="header"> </a> <img src="salata-krocanta.jpg" class="img-fluid" width="100%">
+								<p class="h1">Salata krocanta</p>	
+								<p class="p1">Contine: feta, busuioc, salata iceberg, rosie, kaiser, castravete  500 gr   </p>	
+									<a href="tutti-pizza/meniu-salata-krocanta.html"><button type="button" class="btn btn-danger buton-bizza">16.9 lei >> Detalii</button></a>
+							</li>
+					 </ul>
+				</div>
+			</div>
+
+<!-- A TREIA VARIANTA - AL DOILEA RAND --> 
+			
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="salata-tono.jpg" class="img-fluid" width="100%">
+							<p class="h1">	Salata Tono Sibiu  </p>	
+							<p class="p1">Contine:  porumb, ton, lamaie, salata iceberg, ceapa rosie, castravete 450 gr </p>
+								<a href="tutti-pizza/meniu-salata-tono.html"><button type="button" class="btn btn-danger buton-bizza">17.9 lei >> Detalii</button>	</a>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+
+<!-- A PATRA VARIANTA - AL DOILEA RAND --> 
+
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="pene-prosciutto.jpg" class="img-fluid" width="100%">
+							<p class="h1">Pene Prosciutto Funghi  </p>	
+							<p class="p1">Contine: paste, cascaval, sunca, sos alb, patrunjel proaspat - 450g. </p>
+								<a href="tutti-pizza/meniu-pene-prosciutto-funghi.html"><button type="button" class="btn btn-danger buton-bizza">18.9 lei >> Detalii</button></a>
+							
+						</li>					 
+					</ul>
+				</div>	
+			</div>
+
+<!--  RAND NOU --> 		
+
+<!-- PRIMA VARIANTA - AL TREILEA RAND --> 
+			<div class="col-md-3">
+				<div class="columns">
+					<ul class="price">
+						<li class="header"> </a> <img src="cheesecake.jpg" class="img-fluid" width="100%">
+							<p class="h1">Cheesecake  </p>	
+							<p class="p1">... </p>
+							<a href="tutti-pizza/meniu-cheesecake.html"><button type="button" class="btn btn-danger buton-bizza">5.9 lei >> Detalii</button></a>
+							
+						</li>					 
+					</ul>
+				</div>	
+			</div>
+		</div>
+	  
+	</div>
+	</div>
+	</div>
+
+</body>
+</html>

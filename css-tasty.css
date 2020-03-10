@@ -1,0 +1,179 @@
+
+.p1-tutti{
+	font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+	font-size:19px;
+	font-weight:bold;
+	float:left;
+}
+.p2-tutti{
+	font-size:18px;
+	font-weight:bold;
+}
+		.fb{
+	position:fixed;
+	margin-top:15%;
+	margin-left:0px;
+	}
+
+.google{
+	position:fixed;
+	margin-top:22%;
+	margin-left:0px;
+	padding-top:20px;
+}
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+	margin-bottom:30px;
+	border-radius:10px;
+}
+
+.price:hover {
+    box-shadow: 0 25px 29px 0 rgba(0,0,0,0.7);
+	border-radius:10px;
+
+}
+
+.price .header {
+    background-color: #2f2e2e;
+    color: #c4c4c4;
+	border-radius:10px;
+   
+}
+.img-produs{
+	
+	border-radius:10px 10px 0px 0px;
+}
+
+.price li {
+	padding-bottom:5px;
+    text-align: center;
+}
+.h1{
+	font-size:20px;
+	color:#325676;
+	padding-top:5px;
+	
+}
+.p1{
+	padding-left:4px;
+	padding-right:4px;
+}
+.p2{
+	font-size:19px;
+	
+}
+.c{
+	color:#fff;
+	font-size:18px;
+	
+}
+.buton-bizza{
+    margin-bottom:10px;
+}
+.buton-meniu1{
+	color:#fff;
+	background:#325676;
+
+}
+.h3-top{
+	text-align:center;
+	padding-top:30px;
+}
+	
+.b1{
+	border:1px solid #000;
+	width:20%;
+	margin-top:10px;
+	margin-left:40%;
+	margin-bottom:20px;
+}
+.col-md-6{
+	align:center;
+}
+.p-1-oferta{
+	color:#c00a27;
+	padding-top:10px;
+}
+.p1-header{
+	padding-top:50px;
+	font-size:20px;
+	text-align:left;
+}
+.p2-header{
+	padding-top:30px;
+	font-size:20px;
+}
+.p2-1-header{
+ padding-top:0px;
+	font-size:20px;
+}
+.buton-header{
+	margin-top:30px;
+}
+.img-logo{
+	padding-top:15px;
+}
+.img-log-1{
+	padding-top:15px;
+	padding-left:27%;
+}
+.telefon{
+	text-align:center;
+	font-size:20px;
+	padding-top:10px;
+	font-weight:bold;
+}
+.telefon-2{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+.telefon-3{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{
+	color:#000;
+	text-decoration:none;
+}
+.p1{
+	text-align:center;	
+}
+
+.btn-outline-light{
+	color:#fff;
+	font-weight:bold;
+	font-size:20px;
+	border-radius:0px;
+	border:2px solid  #325676 ;
+	background:  #325676;
+}
+  .btn-outline-light:hover{
+  	color:#fff;
+	border-radius:0px;
+	border:2px solid   #325676 ;
+	background:  #325676;
+} 
+i {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom:2px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+} 	
+	
